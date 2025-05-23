@@ -528,9 +528,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  max-width: auto;
 }
 
 .logo {
@@ -595,6 +593,7 @@ body {
 
 .auth-buttons {
   display: flex;
+  padding-right: 3.2rem;
 }
 
 .btn {
@@ -700,6 +699,11 @@ body {
 
   .nav-links li {
     margin: 0.5rem;
+  }
+
+  .nav-links:hover,
+  .nav-links.active {
+    color: #c2e9fb;
   }
 
   .auth-buttons {
