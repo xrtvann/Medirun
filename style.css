@@ -522,6 +522,7 @@ body {
 .main-header {
   background-color: #34495e;
   padding: 1rem 0;
+  border-bottom: solid #d9d9d9 10px;
 }
 
 .main-nav {
@@ -586,9 +587,30 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
 .nav-links a.active {
-  color: #b7d7c1;
+  color: #34495e;
+  font-weight: bold;
+  background-color: #d9d9d9;
+  padding: 20px 30px 39px 30px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.right-nav {
+  display: flex;
+  color: white;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-right: 1rem;
+}
+
+.right-nav a.active {
+  color: #a96224;
+}
+
+.right-nav .profile {
+  font-size: 40px;
 }
 
 .auth-buttons {
@@ -684,6 +706,89 @@ body {
   font-family: "Rubik", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1.25rem;
+}
+
+.setting {
+  border: 1px solid black;
+  max-width: 708px;
+  height: 279px;
+  margin: 30px 0px 0px 57px;
+  padding: 24px;
+  border-radius: 7px;
+}
+
+.setting-content {
+  display: flex;
+}
+.avatar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar img {
+  max-width: 100px;
+}
+
+.avatar h1 {
+  color: black;
+  font-weight: 900;
+}
+
+.avatar button {
+  max-width: 50%;
+}
+
+.input-field {
+  width: 75%;
+  margin: 0px 0px 0px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group label {
+  color: black;
+  width: 60px;
+  margin-right: 20px;
+}
+
+.input-group input {
+  width: 80%;
+  padding: 5px 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+}
+
+.action-button {
+  display: flex;
+  justify-content: end;
+  margin-right: 17px;
+  margin-top: 10px;
+  gap: 8px;
+}
+.action-button button {
+  width: 6em;
+  border-radius: 3px;
+  padding: 5px 0px;
+}
+
+.action-button .save-button {
+  color: white;
+  background-color: #609F53;
+  border: none;
+}
+
+.action-button .edit-button {
+  background: white;
+  border: 0.5px solid black;
 }
 
 @media (max-width: 768px) {
