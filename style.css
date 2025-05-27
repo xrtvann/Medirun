@@ -782,13 +782,105 @@ body {
 
 .action-button .save-button {
   color: white;
-  background-color: #609F53;
+  background-color: #609f53;
   border: none;
 }
 
 .action-button .edit-button {
   background: white;
   border: 0.5px solid black;
+}
+
+/* Notification */
+.notification-container {
+  max-width: 400px;
+  max-height: 446px;
+  padding-top: 16px;
+  position: absolute;
+  right: 0;
+  box-shadow: 1px #00000040;
+}
+
+.notification-items {
+  display: flex;
+  padding: 10px 5px;
+  border: 0.8px solid #5d5d5d63;
+}
+
+.notification-items .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 5em;
+  height: 5em;
+  margin-right: 10px;
+}
+
+.notification-items .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.notification-items .title {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.notification-items .sub-title {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.notification-items .date {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.notification-items .status {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.notification-items .status .status-item.success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px;
+  border: 1px solid #388041;
+  color: #388041;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.notification-items .status .status-item.sending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px;
+  border: 1px solid #D39845;
+  color: #D39845;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.notification-items .status .status-item.love {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px 0px 0px;
+  color: red;
+  font-size: 2rem;
+}
+
+.notification-items .status .time {
+  font-size: 12px;
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {
