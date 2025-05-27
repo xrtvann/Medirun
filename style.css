@@ -934,9 +934,10 @@ body {
 .profile-container .body .quotes {
   width: 70%;
   margin-top: 38px;
+  margin-bottom: 25px;
 }
 
-.profile-container .body .quotes p{
+.profile-container .body .quotes p {
   font-style: italic;
   font-size: 14px;
   font-weight: 100;
@@ -944,7 +945,34 @@ body {
 }
 
 .profile-container .body .vector {
-  max-width: 150px;
+  max-width: 170px;
+  padding-left: 30px;
+}
+
+.profile-container .action-button {
+  color: black;
+  margin-bottom: 15px;
+  margin-left: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container .action-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px;
+  width: 8rem;
+}
+
+.profile-container .action-button a i {
+  font-size: 25px;
+  margin-right: 5px;
 }
 
 @media (max-width: 768px) {
