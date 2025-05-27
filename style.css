@@ -794,11 +794,15 @@ body {
 /* Notification */
 .notification-container {
   max-width: 400px;
-  max-height: 446px;
-  padding-top: 16px;
+  max-height: 600px;
+  padding: 0px 0px 0px 1px;
+  margin: 16px 0px 0px 0px;
   position: absolute;
   right: 0;
-  box-shadow: 1px #00000040;
+  box-shadow: -5px 5px 5px #00000040;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .notification-items {
@@ -863,8 +867,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0px 0px;
-  border: 1px solid #D39845;
-  color: #D39845;
+  border: 1px solid #d39845;
+  color: #d39845;
   font-size: 12px;
   font-weight: 300;
 }
@@ -881,6 +885,66 @@ body {
 .notification-items .status .time {
   font-size: 12px;
   font-weight: 300;
+}
+
+.notification-container .favorite {
+  color: black;
+  text-decoration: underline;
+  text-align: end;
+  padding: 100px 20px 10px 0px;
+}
+
+/* Profile */
+.profile-container {
+  max-width: 400px;
+  max-height: 600px;
+  padding: 40px 0px 0px 1px;
+  margin: 16px 0px 0px 0px;
+  position: absolute;
+  right: 0;
+  box-shadow: -5px 5px 5px #00000040;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-container .head .image {
+  padding-bottom: 10px;
+}
+
+.profile-container .head .name {
+  font-weight: bold;
+  color: black;
+  font-size: 24px;
+}
+
+.profile-container .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-container .body .quotes {
+  width: 70%;
+  margin-top: 38px;
+}
+
+.profile-container .body .quotes p{
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.profile-container .body .vector {
+  max-width: 150px;
 }
 
 @media (max-width: 768px) {
