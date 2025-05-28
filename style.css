@@ -1136,11 +1136,141 @@ body {
 
 .items-container {
   width: 1130px;
-  height: 400px;
+  height: auto;
   background-color: #d9d9d91c;
   border: 1px solid #5d5d5d;
   border-radius: 7px;
   margin-left: 50px;
+  margin-top: 20px;
+  padding: 25px 72px;
+}
+
+.card {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 12px;
+  width: 220px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 2px 2px 0 #aaa;
+}
+
+.image-wrapper {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.badge-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  background-color: #a0d468;
+  border: 1px solid black;
+  border-radius: 1px;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 4px 6px;
+  color: white;
+  font-weight: bold;
+  width: max-content;
+}
+
+.badge.green {
+  background-color: #a0d468;
+  width: max-content;
+}
+
+.badge.brown {
+  background-color: #8b5c3c;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 4px;
+  color: black;
+}
+
+.detail-button {
+  display: flex;
+}
+
+.detail-obat {
+  font-size: 12px;
+  background-color: #9F6653;
+  padding: 3px 6px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-obat i {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.info-icon {
+  font-size: 12px;
+}
+
+.card .stock {
+  color: #A7B287;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.price {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.stock {
+  font-size: 12px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button-wrapper a {
+  display: flex;
+  justify-content: center;
+}
+
+.btn.primary {
+  background-color: white;
+  font-weight: bold;
+}
+
+.btn.secondary {
+  background-color: black;
+  color: white;
 }
 
 @media (max-width: 768px) {
