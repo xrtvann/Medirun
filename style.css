@@ -618,7 +618,7 @@ body {
   padding-right: 3.2rem;
 }
 
-.btn {
+.btn-index {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-decoration: none;
@@ -629,6 +629,7 @@ body {
 .btn-login {
   color: #ffffff;
   margin-right: 1rem;
+  border: 1px solid white;
 }
 
 .btn-register {
